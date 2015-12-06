@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "E:\\my.project51\\app\\build\\intermediates\\res\\merged\\debug\\layout\\timchu.xml",
+        "source": "E:\\my.project51\\app\\src\\main\\res\\layout\\timchu.xml"
+    },
+    {
+        "merged": "E:\\my.project51\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chontrochoi.xml",
+        "source": "E:\\my.project51\\app\\src\\main\\res\\layout\\chontrochoi.xml"
+    },
+    {
+        "merged": "E:\\my.project51\\app\\build\\intermediates\\res\\merged\\debug\\layout\\vietchu.xml",
+        "source": "E:\\my.project51\\app\\src\\main\\res\\layout\\vietchu.xml"
+    },
+    {
+        "merged": "E:\\my.project51\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chonanhghepchu.xml",
+        "source": "E:\\my.project51\\app\\src\\main\\res\\layout\\chonanhghepchu.xml"
+    },
+    {
+        "merged": "E:\\my.project51\\app\\build\\intermediates\\res\\merged\\debug\\layout\\play.xml",
+        "source": "E:\\my.project51\\app\\src\\main\\res\\layout\\play.xml"
+    },
+    {
+        "merged": "E:\\my.project51\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_game_s.xml",
+        "source": "E:\\my.project51\\app\\src\\main\\res\\layout\\activity_game_s.xml"
+    },
+    {
+        "merged": "E:\\my.project51\\app\\build\\intermediates\\res\\merged\\debug\\layout\\playss.xml",
+        "source": "E:\\my.project51\\app\\src\\main\\res\\layout\\playss.xml"
+    }
+]

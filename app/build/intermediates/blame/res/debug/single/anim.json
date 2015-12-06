@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\my.project51\\app\\build\\intermediates\\res\\merged\\debug\\anim\\translate.xml",
+        "source": "E:\\my.project51\\app\\src\\main\\res\\anim\\translate.xml"
+    },
+    {
+        "merged": "E:\\my.project51\\app\\build\\intermediates\\res\\merged\\debug\\anim\\rotate.xml",
+        "source": "E:\\my.project51\\app\\src\\main\\res\\anim\\rotate.xml"
+    }
+]
