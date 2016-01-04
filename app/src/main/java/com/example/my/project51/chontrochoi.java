@@ -16,13 +16,26 @@ import chonanhghepchu.chucai5;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
 public class chontrochoi extends Activity {
+	Toolbar toolbar;
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chontrochoi);
+		toolbar = (Toolbar) findViewById(R.id.toolbar);
+		toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_left_arrow));
+		toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(chontrochoi.this, GameS.class);
+				startActivity(i);
+				finish();
+			}
+		});
+		toolbar.setTitle("Chọn trò chơi");
 //        int[] a= new int[5]; 
 //     // tạo dãy số liên tục từ 1 dến 5 
 //     for (int i=0; i<5 ; i++) 
@@ -136,16 +149,6 @@ choncauhoi ch= new choncauhoi();
 				startActivityForResult(myintent, 1234);
 				  finish(); 	
 			}
-		}
-		
-	});
-    Button back=(Button) findViewById(R.id.quaylai);
-    back.setOnClickListener(new View.OnClickListener() {
-		
-		public void onClick(View v) {
-			Intent myintent=new Intent(chontrochoi.this, GameS.class);
-			startActivityForResult(myintent, 1234);
-			  finish(); 
 		}
 		
 	});

@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
@@ -23,9 +24,21 @@ import android.widget.AdapterView.OnItemClickListener;
 public class chucai5 extends Activity {
 	MediaPlayer mp3;
 	MediaPlayer amr;
+	Toolbar toolbar;
 	public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.chonanhghepchu);
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.chonanhghepchu);
+		toolbar = (Toolbar) findViewById(R.id.toolbar);
+		toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_left_arrow));
+		toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(chucai5.this, chontrochoi.class);
+				startActivity(i);
+				finish();
+			}
+		});
+		toolbar.setTitle("Ghép chữ");
         ImageView image = (ImageView) findViewById(R.id.imageView1);
         image.setImageResource(R.drawable.n_cat);
         GridView g = (GridView) findViewById(R.id.myGrid);
@@ -40,46 +53,32 @@ public class chucai5 extends Activity {
 				}
 
 				if (+position == 1) {
+					mp3 = MediaPlayer.create(chucai5.this, R.raw.sai);
+					mp3.start();
 					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 2) {
+					mp3 = MediaPlayer.create(chucai5.this, R.raw.sai);
+					mp3.start();
 					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 3) {
+					mp3 = MediaPlayer.create(chucai5.this, R.raw.sai);
+					mp3.start();
 					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 4) {
+					mp3 = MediaPlayer.create(chucai5.this, R.raw.sai);
+					mp3.start();
 					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 5) {
+					mp3 = MediaPlayer.create(chucai5.this, R.raw.sai);
+					mp3.start();
 					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
 				}
 			}
 			});
-		Button back=(Button) findViewById(R.id.back);
-		back.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
-				Intent i = new Intent(chucai5.this,chontrochoi.class);
-				startActivity(i);
-				finish();
-				
-			}
-		});
-//		Button ketiep=(Button) findViewById(R.id.ketiep);
-//		ketiep.setOnClickListener(new OnClickListener() {
-//			
-//			public void onClick(View v) {
-//				// TODO Auto-generated method stub
-//				
-//				Intent i = new Intent(chucai1.this,chucai2.class);
-//				startActivity(i);
-//				finish();
-//				
-//			}
-//		});
 	}
 		public class ImageAdapter extends BaseAdapter {
 			public ImageAdapter(Context c) {

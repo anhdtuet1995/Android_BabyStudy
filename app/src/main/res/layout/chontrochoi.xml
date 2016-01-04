@@ -31,13 +31,5 @@
         android:background="@drawable/custom_button"
         android:text="@string/ghepchu" />
 
-    <Button
-        android:id="@+id/quaylai"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/custom_button"
-        android:text="@string/trolai" />
     </LinearLayout>
 </LinearLayout>
