@@ -3,6 +3,7 @@ package com.example.my.project51;
 import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -19,10 +20,22 @@ public class Addddddd extends Activity {
 	MediaPlayer mp3;
 	MediaPlayer amr;
 	Button back;
+	Toolbar toolbar;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.play);
+		toolbar = (Toolbar) findViewById(R.id.toolbar);
+		toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_left_arrow));
+		toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(Addddddd.this,GameS.class);
+				startActivity(i);
+				finish();
+			}
+		});
+		toolbar.setTitle("Học bảng chữ cái");
 		GridView g = (GridView) findViewById(R.id.myGrid);
 		g.setAdapter(new ImageAdapter(this));
 		g.setOnItemClickListener(new OnItemClickListener() {
@@ -181,18 +194,6 @@ public class Addddddd extends Activity {
 					amr = MediaPlayer.create(Addddddd.this, R.raw.chin);
 					amr.start();
 				}
-			}
-		});
-		back=(Button) findViewById(R.id.back);
-		back.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
-				Intent i = new Intent(Addddddd.this,GameS.class);
-				startActivity(i);
-				finish();
-				
 			}
 		});
 

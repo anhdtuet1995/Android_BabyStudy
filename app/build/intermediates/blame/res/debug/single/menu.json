@@ -1,10 +1,10 @@
 [
     {
-        "merged": "E:\\my.project51\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_game_s.xml",
-        "source": "E:\\my.project51\\app\\src\\main\\res\\menu\\activity_game_s.xml"
+        "merged": "E:\\behocchu\\app\\build\\intermediates\\res\\merged\\debug\\menu\\trochoi.xml",
+        "source": "E:\\behocchu\\app\\src\\main\\res\\menu\\trochoi.xml"
     },
     {
-        "merged": "E:\\my.project51\\app\\build\\intermediates\\res\\merged\\debug\\menu\\trochoi.xml",
-        "source": "E:\\my.project51\\app\\src\\main\\res\\menu\\trochoi.xml"
+        "merged": "E:\\behocchu\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_game_s.xml",
+        "source": "E:\\behocchu\\app\\src\\main\\res\\menu\\activity_game_s.xml"
     }
 ]

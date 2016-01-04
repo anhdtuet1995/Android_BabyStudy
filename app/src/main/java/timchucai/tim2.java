@@ -3,6 +3,7 @@ package timchucai;
 import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -23,183 +24,247 @@ import com.example.my.project51.chontrochoi;
 public class tim2 extends Activity {
 	MediaPlayer mp3;
 	MediaPlayer amr;
+	Toolbar toolbar;
 	public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.timchu);
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.timchu);
+		toolbar = (Toolbar) findViewById(R.id.toolbar);
+		toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_left_arrow));
+		toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(tim2.this, chontrochoi.class);
+				startActivity(i);
+				finish();
+			}
+		});
+		toolbar.setTitle("Tìm chữ cái");
         mp3=MediaPlayer.create(tim2.this,R.raw.m);
         mp3.start();
         Button nghelai=(Button) findViewById(R.id.nghelai);
 		nghelai.setOnClickListener(new OnClickListener() {
-			
+
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
-				mp3=MediaPlayer.create(tim2.this,R.raw.m);
-		        mp3.start();
-				
+
+				mp3 = MediaPlayer.create(tim2.this, R.raw.m);
+				mp3.start();
+
 			}
 		});
         GridView g = (GridView) findViewById(R.id.myGrid);
 		g.setAdapter(new ImageAdapter(this));
 		g.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v,
-					int position, long id) {
+									int position, long id) {
 				if (+position == 0) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
-
 				if (+position == 1) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 2) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 3) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 4) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 5) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 6) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 7) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 8) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 9) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 10) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 11) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 12) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 13) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 14) {
 					mp3 = MediaPlayer.create(tim2.this, R.raw.chinhxac);
 					mp3.start();
-					Toast.makeText(getApplicationContext(),"Chính xác", Toast.LENGTH_SHORT).show();
+					if (choncauhoi.d == 1) {
+						Intent myintent = new Intent(tim2.this, tim2.class);
+						startActivityForResult(myintent, 1234);
+						finish();
+					} else if (choncauhoi.d == 3) {
+						Intent myintent = new Intent(tim2.this, tim3.class);
+						startActivityForResult(myintent, 1234);
+						finish();
+					} else if (choncauhoi.d == 4) {
+						Intent myintent = new Intent(tim2.this, tim4.class);
+						startActivityForResult(myintent, 1234);
+						finish();
+					} else if (choncauhoi.d == 5) {
+						Intent myintent = new Intent(tim2.this, tim5.class);
+						startActivityForResult(myintent, 1234);
+						finish();
+					}
+					Toast.makeText(getApplicationContext(), "Chính xác", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 15) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 16) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 17) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 18) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 19) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 20) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 21) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 22) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 23) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 24) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 25) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 26) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 27) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 28) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 29) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 30) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 31) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 32) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 33) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 34) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 35) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 36) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
 				if (+position == 37) {
-					Toast.makeText(getApplicationContext(),"Sai", Toast.LENGTH_SHORT).show();
+					mp3 = MediaPlayer.create(tim2.this, R.raw.sai);
+					mp3.start();
+					Toast.makeText(getApplicationContext(), "Sai", Toast.LENGTH_SHORT).show();
 				}
-			}
-		});
-		Button back=(Button) findViewById(R.id.back);
-		back.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-			Intent i = new Intent(tim2.this,chontrochoi.class);
-			startActivity(i);
-			finish();
-			}
-		});
-		Button ketiep=(Button) findViewById(R.id.ketiep);
-		ketiep.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-					if(choncauhoi.d==1)
-					{
-						Intent myintent=new Intent(tim2.this, tim1.class);
-						startActivityForResult(myintent, 1234);
-						  finish(); 	
-					}
-					else if(choncauhoi.d==3)
-					{
-						Intent myintent=new Intent(tim2.this, tim3.class);
-						startActivityForResult(myintent, 1234);
-						  finish(); 	
-					}
-					else if(choncauhoi.d==4)
-					{
-						Intent myintent=new Intent(tim2.this, tim4.class);
-						startActivityForResult(myintent, 1234);
-						  finish(); 	
-					}
-					else if(choncauhoi.d==5)
-					{
-						Intent myintent=new Intent(tim2.this, tim5.class);
-						startActivityForResult(myintent, 1234);
-						  finish(); 	
-					}
+				
 				
 			}
 		});

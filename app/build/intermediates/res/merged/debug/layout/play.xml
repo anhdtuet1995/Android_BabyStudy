@@ -3,6 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <GridView
         android:id="@+id/myGrid"
@@ -18,13 +22,5 @@
         android:verticalSpacing="10dp" >
     </GridView>
 
-    <Button
-        android:id="@+id/back"
-        android:layout_width="90dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/custom_button"
-        android:text="@string/trolai" />
 
 </LinearLayout>

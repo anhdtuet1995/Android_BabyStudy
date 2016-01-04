@@ -17,11 +17,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
+import android.support.v7.widget.Toolbar;
 
 @SuppressWarnings("deprecation")
 public class Goiplayss extends Activity {
 	MediaPlayer amr;
 	Button back;
+	Toolbar toolbar;
 	Integer[] imageIDs = { R.drawable.conca, R.drawable.concua,
 			R.drawable.conga, R.drawable.conheo, R.drawable.contrau,
 			R.drawable.maygiat, R.drawable.mayvitinh, R.drawable.ngoinha,
@@ -36,6 +38,17 @@ public class Goiplayss extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.playss);
+		toolbar = (Toolbar) findViewById(R.id.toolbar);
+		toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_left_arrow));
+		toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(Goiplayss.this,GameS.class);
+				startActivity(i);
+				finish();
+			}
+		});
+		toolbar.setTitle("Nhận biết đồ vật");
 		Gallery gallery = (Gallery) findViewById(R.id.gallery1);
 		final TextView txt1;
 		txt1 = (TextView) findViewById(R.id.textView1);
@@ -118,18 +131,6 @@ public class Goiplayss extends Activity {
 					amr = MediaPlayer.create(Goiplayss.this, R.raw.quatao);
 				    amr.start();
 					txt1.setText("Quả táo");}
-				
-			}
-		});
-		back=(Button) findViewById(R.id.quay);
-		back.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
-				Intent i = new Intent(Goiplayss.this,GameS.class);
-				startActivity(i);
-				finish();
 				
 			}
 		});

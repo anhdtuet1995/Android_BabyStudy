@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -19,7 +20,7 @@ import android.widget.Toast;
 public class vietchu extends Activity {
 	Button back, vietlai;
 	GestureOverlayView gesture;
-
+	Toolbar toolbar;
 	Integer[] imageIDs = { R.drawable.a, R.drawable.a1,
 			R.drawable.a2, R.drawable.b, R.drawable.c,
 			R.drawable.d, R.drawable.d1, R.drawable.e,
@@ -34,21 +35,20 @@ public class vietchu extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.vietchu);
+		toolbar = (Toolbar) findViewById(R.id.toolbar);
+		toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_left_arrow));
+		toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(vietchu.this, GameS.class);
+				startActivity(i);
+				finish();
+			}
+		});
+		toolbar.setTitle("Bé tập viết chữ");
 		Gallery gallery = (Gallery) findViewById(R.id.gallery1);
 		gallery.setAdapter(new ImageAdapter(getApplicationContext()));
 	//	gallery.setAdapter(new ImageAdapter(getApplicationContext();
-		back=(Button) findViewById(R.id.quay);
-		back.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
-				Intent i = new Intent(vietchu.this,GameS.class);
-				startActivity(i);
-				finish();
-				
-			}
-		});
 		gesture = (GestureOverlayView) findViewById(R.id.gestureOverlayView1);
 		vietlai = (Button) findViewById(R.id.btn_vietlai);
 		vietlai.setOnClickListener(new OnClickListener() {
