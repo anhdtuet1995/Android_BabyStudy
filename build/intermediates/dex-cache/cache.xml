@@ -1,3 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\anhdt\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="E:\behocchu\app\build\intermediates\pre-dexed\release\support-annotations-21.0.0_6e59799051d9b668e3a007139c7bfa15275cca0b.jar" />
+    </item>
+    <item
+        jar="E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\21.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6c6b497aa9e3aadbaabf975379e7914fa9e65523">
+        <dex dex="E:\behocchu\app\build\intermediates\pre-dexed\release\com.android.support-gridlayout-v7-21.0.0_c1aed2cfa3647fc31a2a9a1a5e3baa4dda4e2dd0.jar" />
+    </item>
+    <item
+        jar="E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\jars\libs\internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="E:\behocchu\app\build\intermediates\pre-dexed\release\internal_impl-21.0.0_3c60906c816ba12902c19b6c0a138b252114f9c1.jar" />
+    </item>
+    <item
+        jar="E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="E:\behocchu\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-21.0.0_5c3db85f37ac614746aea2284b946cdfabab37ea.jar" />
+    </item>
+    <item
+        jar="E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="95fd37732ec852e99f07eeb516a3650172f1d136">
+        <dex dex="E:\behocchu\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-21.0.0_9c5effe67c31b7f1fcae8cd02cd914a0cb09de88.jar" />
+    </item>
+
+</items>

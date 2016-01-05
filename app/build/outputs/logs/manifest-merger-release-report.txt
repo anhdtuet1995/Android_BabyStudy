@@ -1,0 +1,151 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:1:1-69:12
+	package
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:2:5-39
+		INJECTED from E:\behocchu\app\src\main\AndroidManifest.xml
+		INJECTED from E:\behocchu\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:4:5-30
+		INJECTED from E:\behocchu\app\src\main\AndroidManifest.xml
+		INJECTED from E:\behocchu\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from E:\behocchu\app\src\main\AndroidManifest.xml
+		INJECTED from E:\behocchu\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:1:11-69
+uses-sdk
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:gridlayout-v7:21.0.0] E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\21.0.0\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.0] E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.0] E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:appcompat-v7:21.0.0] E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.0] E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\AndroidManifest.xml:15:5-42
+	android:targetSdkVersion
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:8:9-38
+		INJECTED from E:\behocchu\app\src\main\AndroidManifest.xml
+		INJECTED from E:\behocchu\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:7:9-34
+		INJECTED from E:\behocchu\app\src\main\AndroidManifest.xml
+		INJECTED from E:\behocchu\app\src\main\AndroidManifest.xml
+application
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:9:5-67:19
+MERGED from [com.android.support:gridlayout-v7:21.0.0] E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\21.0.0\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.0] E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.0] E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:appcompat-v7:21.0.0] E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.0] E:\behocchu\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\AndroidManifest.xml:16:5-19
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:11:9-41
+	android:icon
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:10:9-45
+	android:theme
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:12:9-47
+activity#com.example.my.project51.GameS
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:13:9-20:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:15:13-49
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:14:13-34
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:16:13-19:29
+action#android.intent.action.MAIN
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:18:27-74
+activity#com.example.my.project51.Goiplayss
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:21:9-24:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:23:13-43
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:22:13-38
+activity#com.example.my.project51.Addddddd
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:25:9-27:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:26:13-46
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:25:19-43
+activity#com.example.my.project51.ngheamdoanchu
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:28:9-30:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:29:21-51
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:28:19-72
+activity#com.example.my.project51.vietchu
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:31:10-33:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:32:21-52
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:31:20-67
+activity#com.example.my.project51.chontrochoi
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:34:9-36:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:35:13-48
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:34:19-70
+activity#timchucai.tim1
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:37:9-39:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:38:13-46
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:37:19-48
+activity#timchucai.tim2
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:40:9-42:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:41:13-46
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:40:19-48
+activity#timchucai.tim3
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:43:9-45:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:44:13-46
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:43:19-48
+activity#timchucai.tim4
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:46:9-48:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:47:13-46
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:46:19-48
+activity#timchucai.tim5
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:49:9-51:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:50:13-46
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:49:19-48
+activity#chonanhghepchu.chucai1
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:52:9-54:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:53:13-44
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:52:19-56
+activity#chonanhghepchu.chucai2
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:55:9-57:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:56:13-44
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:55:19-56
+activity#chonanhghepchu.chucai3
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:58:9-60:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:59:13-44
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:58:19-56
+activity#chonanhghepchu.chucai4
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:61:9-63:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:62:13-44
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:61:19-56
+activity#chonanhghepchu.chucai5
+ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:64:9-66:20
+	android:label
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:65:13-44
+	android:name
+		ADDED from E:\behocchu\app\src\main\AndroidManifest.xml:64:19-56

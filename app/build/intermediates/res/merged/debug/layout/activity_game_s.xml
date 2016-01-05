@@ -19,7 +19,8 @@
             android:layout_marginTop="60dp"
             android:text="@string/TenGame"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/btnNewGame"
@@ -28,7 +29,8 @@
             android:layout_gravity="center"
             android:layout_marginTop="80dp"
             android:background="@drawable/custom_button"
-            android:text="@string/Batdauhoc" />
+            android:text="@string/Batdauhoc"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/btnnhandang"
@@ -37,7 +39,8 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/custom_button"
-            android:text="@string/Caidat" />
+            android:text="@string/Caidat"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/tapvietchu"
@@ -46,7 +49,8 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/custom_button"
-            android:text="@string/tapviet" />
+            android:text="@string/tapviet"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/trochoi"
@@ -55,7 +59,8 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/custom_button"
-            android:text="@string/trochoi" />
+            android:text="@string/trochoi"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/btnExit"
@@ -64,6 +69,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/custom_button"
-            android:text="@string/Thoat" />
+            android:text="@string/Thoat"
+            android:textColor="#000000"/>
     </LinearLayout>>
 </LinearLayout>
